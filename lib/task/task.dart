@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class Task extends StatefulWidget{
-  Task({Key? key}):super(key: key);
+  const Task({Key? key}):super(key: key);
 
   @override
   State<Task> createState() {
