@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:hive/hive.dart';
+import './note/note.dart';
+import './account/account.dart';
+import './task/task.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
@@ -34,14 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-            ],
-          ),
-        ),
-      ),
+      body: Container(),
     );
   }
 }
