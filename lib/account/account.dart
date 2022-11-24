@@ -15,7 +15,11 @@ class Account_state extends State<Account>{
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-
+      child: Column(
+        children: const <Widget> [
+          Text("Account")
+        ],
+      )
     );
   }
 

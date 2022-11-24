@@ -46,14 +46,14 @@ class _MyHomePageState extends State<MyHomePage> {
   ];
 
   final PageStorageBucket page = PageStorageBucket();
-  Widget current_screen = Note();
+  // ignore: non_constant_identifier_names
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageStorage(
         bucket: page, 
-        child: current_screen
+        child: screens[current_tab]
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Color.fromRGBO(222, 185, 96, 1.0),
@@ -70,25 +70,47 @@ class _MyHomePageState extends State<MyHomePage> {
         shape: CircularNotchedRectangle(),
         notchMargin: 5,
         child: Container(
+          padding: EdgeInsets.only(left: 25),
           height: 70,
           child: Row(
             children: <Widget> [
               IconButton(
-                onPressed: () {}, 
+                onPressed: () {
+                  setState(() {
+                  
+                });
+                }, 
+                padding: EdgeInsets.symmetric(horizontal: 30),
+                iconSize: 40,
                 icon: Icon(
-                  Icons.list
+                  Icons.list,
+                  color: Color.fromRGBO(102, 102, 102, 1),
                 ),
               ),
               IconButton(
-                onPressed: () {}, 
+                onPressed: () {
+                  setState(() {
+                  
+                });
+                }, 
+                iconSize: 40,
+                padding: EdgeInsets.symmetric(horizontal: 30),
                 icon: Icon(
-                  Icons.list
+                  Icons.note,
+                  color: Color.fromRGBO(102, 102, 102, 1),
                 ),
               ),
               IconButton(
-                onPressed: () {}, 
+                onPressed: () {
+                setState(() {
+                  
+                });
+                }, 
+                iconSize: 40,
+                padding: EdgeInsets.symmetric(horizontal: 30),
                 icon: Icon(
-                  Icons.list
+                  Icons.account_circle,
+                  color: Color.fromRGBO(102, 102, 102, 1),
                 ),
               ),
             ],

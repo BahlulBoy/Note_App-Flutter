@@ -14,7 +14,11 @@ class Task_state extends State<Task>{
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-
+      child: Column(
+        children: const <Widget> [
+          Text("Task", style: TextStyle(fontSize: 20))
+        ],
+      ),
     );
   }
 }
