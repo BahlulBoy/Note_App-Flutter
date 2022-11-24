@@ -16,8 +16,15 @@ class Note_state extends State<Note>{
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        children: const <Widget> [
-          Center(child: Text("Note", style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),))
+        children: <Widget> [
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+            child: Text(
+              "Notes", style: TextStyle(
+                fontSize: 45, fontWeight: FontWeight.w900, color: Color.fromRGBO(222, 185, 96, 1)
+              ),
+            ),
+          )
         ],
       )
     );

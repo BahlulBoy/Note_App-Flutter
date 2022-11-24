@@ -71,39 +71,39 @@ class _MyHomePageState extends State<MyHomePage> {
         notchMargin: 5,
         child: Container(
           padding: EdgeInsets.only(left: 25),
-          height: 70,
+          height: 75,
           child: Row(
             children: <Widget> [
               IconButton(
                 onPressed: () {
                   setState(() {
-                  
+                  current_tab = 0;
                 });
                 }, 
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 iconSize: 40,
                 icon: Icon(
-                  Icons.list,
+                  Icons.list_alt,
                   color: Color.fromRGBO(102, 102, 102, 1),
                 ),
               ),
               IconButton(
                 onPressed: () {
                   setState(() {
-                  
+                  current_tab = 1;
                 });
                 }, 
                 iconSize: 40,
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 icon: Icon(
-                  Icons.note,
+                  Icons.note_add_sharp,
                   color: Color.fromRGBO(102, 102, 102, 1),
                 ),
               ),
               IconButton(
                 onPressed: () {
                 setState(() {
-                  
+                  current_tab = 2;
                 });
                 }, 
                 iconSize: 40,

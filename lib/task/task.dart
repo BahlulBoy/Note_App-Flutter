@@ -15,8 +15,15 @@ class Task_state extends State<Task>{
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        children: const <Widget> [
-          Text("Task", style: TextStyle(fontSize: 20))
+        children: <Widget> [
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+            child: Text(
+              "Task Planner", style: TextStyle(
+                fontSize: 45, fontWeight: FontWeight.w900, color: Color.fromRGBO(222, 185, 96, 1)
+              ),
+            ),
+          )
         ],
       ),
     );
