@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageStorage(
-        bucket: page, 
+        bucket: page,
         child: screens[current_tab]
       ),
       floatingActionButton: FloatingActionButton(
@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 iconSize: 40,
                 icon: Icon(
                   Icons.list_alt,
-                  color: Color.fromRGBO(102, 102, 102, 1),
+                  color: current_tab == 0 ? Color.fromARGB(255, 141, 141, 141) :Color.fromRGBO(102, 102, 102, 1),
                 ),
               ),
               IconButton(
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 icon: Icon(
                   Icons.note_add_sharp,
-                  color: Color.fromRGBO(102, 102, 102, 1),
+                  color: current_tab == 1 ? Color.fromARGB(255, 141, 141, 141) :Color.fromRGBO(102, 102, 102, 1),
                 ),
               ),
               IconButton(
@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 icon: Icon(
                   Icons.account_circle,
-                  color: Color.fromRGBO(102, 102, 102, 1),
+                  color: current_tab == 2 ? Color.fromARGB(255, 141, 141, 141) :Color.fromRGBO(102, 102, 102, 1),
                 ),
               ),
             ],
