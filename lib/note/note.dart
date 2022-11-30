@@ -18,12 +18,25 @@ class Note_state extends State<Note>{
       child: Column(
         children: <Widget> [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
-            child: Text(
+            padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+            child: const Text(
               "Notes", style: TextStyle(
                 fontSize: 45, fontWeight: FontWeight.w900, color: Color.fromRGBO(222, 185, 96, 1)
               ),
             ),
+          ),
+          GridView.count(
+            shrinkWrap: true,
+            crossAxisCount: 2,
+            children: <Widget>[
+              Container(
+                child: Column(
+                  children: <Widget>[
+                    Text("Title"),
+                  ],
+                ),
+              ),
+            ],
           )
         ],
       )
