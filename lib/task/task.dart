@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/cupertino.dart';
 
 class Task extends StatefulWidget{
@@ -17,12 +19,19 @@ class Task_state extends State<Task>{
       child: Column(
         children: <Widget> [
           Container(
+            alignment: Alignment.centerLeft,
             padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
             child: Text(
               "Task Planner", style: TextStyle(
                 fontSize: 45, fontWeight: FontWeight.w900, color: Color.fromRGBO(222, 185, 96, 1)
               ),
             ),
+          ),
+          ListView(
+            shrinkWrap: true,
+            children: [
+              
+            ],
           )
         ],
       ),
