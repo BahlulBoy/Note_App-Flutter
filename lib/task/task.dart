@@ -35,8 +35,13 @@ class Task_state extends State<Task>{
               Container(
                 height: 100,
                 decoration: BoxDecoration(
-                  color: Colors.amber[300],
+                  color: Color.fromARGB(255, 255, 248, 188),
                   borderRadius: BorderRadius.circular(10)
+                ),
+                child: Row(
+                  children: [
+                    
+                  ]
                 ),
               )
             ],
