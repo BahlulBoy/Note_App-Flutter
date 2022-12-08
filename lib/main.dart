@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:hive/hive.dart';
 import 'package:note_app/firebase/firebase_options.dart';
+import 'package:animated_floating_buttons/animated_floating_buttons.dart';
 import './note/note.dart';
 import './account/account.dart';
 import './task/task.dart';
@@ -43,9 +44,31 @@ class _MyHomePageState extends State<MyHomePage> {
     Task(),
     Account(),
   ];
-
+  final GlobalKey<AnimatedFloatingActionButtonState> key =GlobalKey<AnimatedFloatingActionButtonState>();
   final PageStorageBucket page = PageStorageBucket();
   // ignore: non_constant_identifier_names
+
+  Widget addNote() {
+    return Container(
+      child: FloatingActionButton(
+        onPressed: null,
+        heroTag: "btn1",
+        tooltip: 'First button',
+        child: Icon(Icons.note_add_sharp),
+      ),
+    );
+  }
+
+  Widget addTask() {
+    return Container(
+      child: FloatingActionButton(
+        onPressed: null,
+        heroTag: "btn1",
+        tooltip: 'First button',
+        child: Icon(Icons.add_task),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,24 +77,24 @@ class _MyHomePageState extends State<MyHomePage> {
         bucket: page,
         child: screens[current_tab]
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Color.fromRGBO(222, 185, 96, 1.0),
-        child: Icon(
-          Icons.add,
-          size: 30,
-          color: Colors.white),
-        onPressed: () {
-        },
+      floatingActionButton: AnimatedFloatingActionButton(
+        fabButtons: <Widget> [
+          addNote(), addTask()
+        ], 
+        curve: Curves.easeInOutCirc,
+        animatedIconData: AnimatedIcons.menu_home,
+        colorStartAnimation: Color.fromRGBO(222, 185, 96, 1),
+        colorEndAnimation: Color.fromARGB(255, 240, 127, 127),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       bottomNavigationBar: BottomAppBar(
         color: Color.fromRGBO(36, 35, 34, 1.0),
         shape: CircularNotchedRectangle(),
         notchMargin: 5,
         child: Container(
-          padding: EdgeInsets.only(left: 25),
           height: 75,
           child: Row(
+            mainAxisAlignment:  MainAxisAlignment.center,
             children: <Widget> [
               IconButton(
                 onPressed: () {

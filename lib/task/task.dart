@@ -33,16 +33,100 @@ class Task_state extends State<Task>{
             shrinkWrap: true,
             children: [
               Container(
-                height: 100,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 255, 248, 188),
-                  borderRadius: BorderRadius.circular(10)
-                ),
-                child: Row(
+                height: 40,
+                child: ListView(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
                   children: [
-                    
-                  ]
+                    GestureDetector(
+                      child: Container(
+                        margin: EdgeInsets.only(left: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color.fromARGB(255, 255, 245, 155)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                        alignment: Alignment.center,
+                        child: Text("Senin", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                      ),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        margin: EdgeInsets.only(left: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color.fromARGB(255, 255, 245, 155)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                        alignment: Alignment.center,
+                        child: Text("Selasa", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                      ),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        margin: EdgeInsets.only(left: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color.fromARGB(255, 255, 245, 155)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                        alignment: Alignment.center,
+                        child: Text("Rabu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                      ),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        margin: EdgeInsets.only(left: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color.fromARGB(255, 255, 245, 155)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                        alignment: Alignment.center,
+                        child: Text("Kamis", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                      ),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        margin: EdgeInsets.only(left: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color.fromARGB(255, 255, 245, 155)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                        alignment: Alignment.center,
+                        child: Text("Jumat", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                      ),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        margin: EdgeInsets.only(left: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color.fromARGB(255, 255, 245, 155)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                        alignment: Alignment.center,
+                        child: Text("Sabtu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                      ),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        margin: EdgeInsets.only(left: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color.fromARGB(255, 255, 245, 155)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+                        alignment: Alignment.center,
+                        child: Text("Minggu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                      ),
+                    ),
+                  ],
                 ),
+              ),
+              ListView(
+                shrinkWrap: true,
               )
             ],
           )

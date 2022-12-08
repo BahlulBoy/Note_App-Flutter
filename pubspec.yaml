@@ -37,6 +37,7 @@ dependencies:
   firebase_core: ^2.3.0
   hive: ^2.2.3
   floating_action_bubble: ^1.1.4
+  animated_floating_buttons: ^0.0.2
 
 dev_dependencies:
   flutter_test:
