@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Task extends StatefulWidget{
   const Task({Key? key}):super(key: key);
@@ -28,9 +29,16 @@ class Task_state extends State<Task>{
             ),
           ),
           ListView(
+            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             shrinkWrap: true,
             children: [
-              
+              Container(
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.amber[300],
+                  borderRadius: BorderRadius.circular(10)
+                ),
+              )
             ],
           )
         ],
