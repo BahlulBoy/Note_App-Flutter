@@ -42,84 +42,84 @@ class Task_state extends State<Task>{
                       child: Container(
                         margin: EdgeInsets.only(left: 10),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color.fromARGB(255, 255, 245, 155)
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.orange.shade900
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                         alignment: Alignment.center,
-                        child: Text("Senin", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                        child: Text("Senin", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white)),
                       ),
                     ),
                     GestureDetector(
                       child: Container(
                         margin: EdgeInsets.only(left: 10),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color.fromARGB(255, 255, 245, 155)
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.orange.shade900
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                         alignment: Alignment.center,
-                        child: Text("Selasa", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                        child: Text("Selasa", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white),),
                       ),
                     ),
                     GestureDetector(
                       child: Container(
                         margin: EdgeInsets.only(left: 10),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color.fromARGB(255, 255, 245, 155)
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.orange.shade900
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                         alignment: Alignment.center,
-                        child: Text("Rabu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                        child: Text("Rabu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white),),
                       ),
                     ),
                     GestureDetector(
                       child: Container(
                         margin: EdgeInsets.only(left: 10),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color.fromARGB(255, 255, 245, 155)
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.orange.shade900
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                         alignment: Alignment.center,
-                        child: Text("Kamis", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                        child: Text("Kamis", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white),),
                       ),
                     ),
                     GestureDetector(
                       child: Container(
                         margin: EdgeInsets.only(left: 10),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color.fromARGB(255, 255, 245, 155)
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.orange.shade900
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                         alignment: Alignment.center,
-                        child: Text("Jumat", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                        child: Text("Jumat", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white),),
                       ),
                     ),
                     GestureDetector(
                       child: Container(
                         margin: EdgeInsets.only(left: 10),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color.fromARGB(255, 255, 245, 155)
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.orange.shade900
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                         alignment: Alignment.center,
-                        child: Text("Sabtu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                        child: Text("Sabtu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white),),
                       ),
                     ),
                     GestureDetector(
                       child: Container(
                         margin: EdgeInsets.only(left: 10),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Color.fromARGB(255, 255, 245, 155)
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.orange.shade900
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
                         alignment: Alignment.center,
-                        child: Text("Minggu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),),
+                        child: Text("Minggu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white),),
                       ),
                     ),
                   ],
