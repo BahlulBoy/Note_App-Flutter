@@ -1,48 +1,21 @@
-// ignore_for_file: prefer_const_constructors, unused_import
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_storage/firebase_storage.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:hive/hive.dart';
-import 'package:note_app/firebase/firebase_options.dart';
+import 'package:note_app/task/task.dart';
+import 'package:note_app/account/account.dart';
+import 'package:note_app/note/note.dart';
 import 'package:animated_floating_buttons/animated_floating_buttons.dart';
-import './note/note.dart';
-import './account/account.dart';
-import './task/task.dart';
-import './note/addnote.dart';
-import './task/addtask.dart';
+import 'package:note_app/note/addnote.dart';
+import 'package:note_app/task/addtask.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  runApp(const MyApp());
-}
 
-class MyApp extends StatelessWidget {
-
-  const MyApp({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key,}) : super(key: key);
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _HomeScreenState extends State<HomeScreen> {
   int current_tab = 0;
   final List<Widget> screens = [
     Note(),
@@ -75,6 +48,21 @@ class _MyHomePageState extends State<MyHomePage> {
         heroTag: null,
         tooltip: 'First button',
         child: Icon(Icons.add_task),
+      ),
+    );
+  }
+
+  Widget logout() {
+    return Container(
+    child: FloatingActionButton(
+        backgroundColor: Color.fromRGBO(222, 185, 96, 1.0),
+        child: Icon(
+          Icons.logout_outlined,
+          size: 30,
+          color: Colors.white),
+        onPressed: () {
+          FirebaseAuth.instance.signOut();
+        },
       ),
     );
   }
