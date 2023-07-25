@@ -9,8 +9,8 @@ this project is a note application where users can create a note in this applica
 <br />
 <p float="left">
     <img src="img/note_page.png" width=20% height=20%>
-    <img src="img/note_page.png" width=20% height=20%>
-    <img src="img/note_page.png" width=20% height=20%>
+    <img src="img/task_scheduler_page.png" width=20% height=20%>
+    <img src="img/profile_page.png" width=20% height=20%>
   </a>
 </p>
 <br>
