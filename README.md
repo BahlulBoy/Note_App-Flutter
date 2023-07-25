@@ -1,16 +1,14 @@
-# note app
-
-A new Flutter project.
-
-# Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Note App
+this project is a note application where users can create a note in this application. besides that this application also supports users to create a daily schedule. this project work was carried out for the final project exam for the mobile computing course.
+# Tools that i use
+- Dart.
+- Flutter.
+- Cloud Firestore.
+- Firebase auth.
+# Documentation
+<br />
+<p align="center">
+    <img src="Logo/RETRIP_LOGO-04.png" width=50% height=50%>
+  </a>
+</p>
+<br>
