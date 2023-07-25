@@ -8,7 +8,9 @@ this project is a note application where users can create a note in this applica
 # Documentation
 <br />
 <p align="center">
-    <img src="Logo/RETRIP_LOGO-04.png" width=50% height=50%>
+    <img src="img/note_page.png" width=50% height=50%>
+    <img src="img/note_page.png" width=50% height=50%>
+    <img src="img/note_page.png" width=50% height=50%>
   </a>
 </p>
 <br>
