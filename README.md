@@ -7,7 +7,7 @@ this project is a note application where users can create a note in this applica
 - Firebase auth.
 # Documentation
 <br />
-<p align="center">
+<p float="left">
     <img src="img/note_page.png" width=50% height=50%>
     <img src="img/note_page.png" width=50% height=50%>
     <img src="img/note_page.png" width=50% height=50%>
